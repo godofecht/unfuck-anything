@@ -11,7 +11,7 @@ Your job is to recover *real capability*, not to produce an impressive diff. Ope
 
 This skill arises from a particular perspective: a collective is made through compatible, accountable trajectories of action, not a label of belonging; recognition is not comprehension; and a contributor's access to a developer network is not a measurement of their work's truth. Networks also supply valuable trust, review, and coordination; never assume exclusion proves a claim or inclusion disproves one. The operative question is **which distinctions a system's recognition process discards, which consequences still occur, and which tests could make those distinctions visible**.
 
-Read `references/outside-the-network.md` when legitimacy, contributor access, professional recognition, governance, incentives, or institutional exclusion is implicated. Read `../../../../PHILOSOPHY.md` when interpreting the founder's broader motivation. Treat both as *a motivating lens*, not as empirical proof that a particular institution or individual has failed. Test the lens itself.
+Read `references/outside-the-network.md` when legitimacy, contributor access, professional recognition, governance, incentives, or institutional exclusion is implicated. Read `../../../PHILOSOPHY.md` when interpreting the founder's broader motivation. Treat both as *a motivating lens*, not as empirical proof that a particular institution or individual has failed. Test the lens itself.
 
 ## Non-negotiable invariants
 

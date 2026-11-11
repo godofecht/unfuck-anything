@@ -4,6 +4,12 @@
 
 The premise: if teams or agents are rewarded for commits, PRs, green dashboards, complexity, conformity, or speed rather than demonstrated outcomes, the architecture can optimize those proxies while losing the capability it was supposed to provide. That is a hypothesis to test, not an accusation to assume.
 
+## The philosophy behind the tool
+
+**Being admitted to a developer network is not the same as being right about a system. Being outside one is not proof of being right, either.** The network is useful technical coordination infrastructure, but it also distributes trust, authority, attention, opportunity, and the power to define what gets evaluated. This project insists on separating an artifact's real behavior from the social mechanisms that recognize or exclude its creator.
+
+Read [the founder's philosophy of life and the developer network viewed from outside](PHILOSOPHY.md) and [the agent's operational outsider-network audit lens](.agents/skills/unfuck-anything/references/outside-the-network.md). These make asymmetric review standards and eligibility-based recognition investigable **without** making group membership, credentials, exclusion, or personal motives a substitute for evidence.
+
 ## What it does
 
 Invoking **unfuck-anything** gives an agent a protocol to reconstruct what a system actually does, identify its failure mechanisms, establish a baseline, compare repair options, make the smallest justified changes, and independently verify the result. It explicitly forbids passing off formatting, renamed abstractions, suppressed tests, and presentation metrics as repairs.

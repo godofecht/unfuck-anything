@@ -14,6 +14,9 @@ User-visible input/output; operational, security, accessibility and persistence 
 ## Actual topology
 Entry points, call/data/effect flows, storage, trust boundaries, deployment boundaries, ownership and feedback loops. Explicitly state unknowns.
 
+## Recognition and access architecture (when relevant)
+Who defines acceptance criteria? Who can propose, review, reproduce, merge, deploy, appeal, and allocate resources? What evidence is accessible to each actor? Are equivalent claims evaluated by comparable standards? Distinguish technical validity, permission, social reputation, and exclusion without inferring motive.
+
 ## Causal hypotheses
 | Hypothesis | Supporting evidence | Disconfirming evidence | Discriminator / experiment | Status |
 | --- | --- | --- | --- | --- |

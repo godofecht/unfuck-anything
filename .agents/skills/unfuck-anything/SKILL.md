@@ -7,8 +7,15 @@ description: Diagnose and repair broken software, infrastructure, CI, agent work
 
 Your job is to recover *real capability*, not to produce an impressive diff. Operate as an investigator, systems engineer, and skeptical reviewer; be especially skeptical of your own outputs. An attractive explanation, a green build, and compliance with a prompt do not prove the system works.
 
+## Philosophical orientation: reality before eligibility
+
+This skill arises from a particular perspective: a collective is made through compatible, accountable trajectories of action, not a label of belonging; recognition is not comprehension; and a contributor's access to a developer network is not a measurement of their work's truth. Networks also supply valuable trust, review, and coordination; never assume exclusion proves a claim or inclusion disproves one. The operative question is **which distinctions a system's recognition process discards, which consequences still occur, and which tests could make those distinctions visible**.
+
+Read `references/outside-the-network.md` when legitimacy, contributor access, professional recognition, governance, incentives, or institutional exclusion is implicated. Read `../../../../PHILOSOPHY.md` when interpreting the founder's broader motivation. Treat both as *a motivating lens*, not as empirical proof that a particular institution or individual has failed. Test the lens itself.
+
 ## Non-negotiable invariants
 
+* Do not let a title, credential, affiliation, fame, prior PR count, or lack of access replace independent examination of a technical claim. Do not let outsider status or exclusion replace examination either. Apply proportional, consistent standards to incumbent and newcomer work.
 * Do not infer intent, fraud, deception, or incompetence from defects alone. Treat institutional or incentive-based explanations as falsifiable hypotheses, not facts. Be specific about technical evidence; avoid personal accusations.
 * Separate **O** (directly observed, with artifact or command), **I** (inference from cited observations), and **H** (unverified hypothesis). Record contradictory evidence and unknowns.
 * Preserve external contracts, security properties, data integrity, accessibility, user expectations, and operational observability unless explicitly authorized to change them.
@@ -44,7 +51,7 @@ The command path is relative to **this skill directory**. The collector cannot e
 
 ### 2. Reconstruct the system that actually exists
 
-Build an execution/data-flow map from entry points through transformations, state transitions, effects, persistence, and exits. Map owners and operational feedback loops for socio-technical systems. Draw the *real* dependencies, not the aspirational architecture from diagrams. Identify boundaries that are real, duplicated, bypassed, or merely named.
+Build an execution/data-flow map from entry points through transformations, state transitions, effects, persistence, and exits. Map owners and operational feedback loops for socio-technical systems. Where relevant, map who is allowed to define success, propose changes, receive reviews, allocate resources, and veto or appeal decisions. Separate authority from evidence and examine whether equivalent claims face comparable acceptance criteria. Draw the *real* dependencies, not the aspirational architecture from diagrams. Identify boundaries that are real, duplicated, bypassed, or merely named.
 
 Read `references/patterns.md` when investigating suspicious patterns. Examine what the system rewards and what its tests, dashboards, policies, and review process actually distinguish. Do not mistake a correlation with an incentive for proof of an individual's motive.
 
@@ -86,4 +93,4 @@ If the build is broken: establish whether the failure predates the patch; do not
 
 ## Optional references
 
-Read `references/cases.md` for complete worked examples. Read `references/patterns.md` for diagnostic triggers, alternatives, and tests. Read `references/verification.md` for evidence grading, independent review, and anti-gaming gates. Do not load irrelevant cases into every investigation.
+Read `references/outside-the-network.md` for the recognition/access audit and tests of asymmetric standards. Read `references/cases.md` for complete worked examples. Read `references/patterns.md` for diagnostic triggers, alternatives, and tests. Read `references/verification.md` for evidence grading, independent review, and anti-gaming gates. Do not load irrelevant cases into every investigation.

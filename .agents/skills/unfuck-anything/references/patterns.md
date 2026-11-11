@@ -19,6 +19,9 @@ These are *investigation prompts*, not labels to apply to people. A defect is no
 | Ownership diffusion | Every incident crosses teams but no one can resolve it | Truly shared infrastructure | Map escalation paths and actual authority to change | Assign end-to-end responsibility with escalation |
 | Agent self-certification | Implementer authored all tests and declared success | No separate review capacity | Run independent adversarial tests against pinned contract | Split generator/verifier and enforce rejection criteria |
 | Dependency mirage | A tool or dependency is present but its feature is never executed | Pre-adoption scaffolding | Trace runtime path and compare observable outcomes | Remove or actually exercise feature, as warranted |
+| Recognition substituted for evidence | Credentials or network familiarity decide whether a test is even examined | Limited maintainer time, trust and risk requirements | Compare same-contract work, review criteria and counterexamples | Transparent reproducible acceptance and bounded evidence intake |
+| Eligibility loop | Contributor must gain membership before their defect evidence can be evaluated | Anti-abuse, security or regulated access needs | Separate rights to report, validate, merge and deploy | Permit safe evidence triage without bypassing ownership controls |
+| Asymmetric acceptance standards | Incumbent and newcomer proposals face different undocumented requirements | Real differences in scope, risk, or support burden | Apply written criteria to both with comparable inputs | Publish criteria, reproduce outcomes, allow appeal |
 | Security-by-documentation | Policy described but not enforced | Control may exist upstream | Negative authorization tests and audit-trail inspection | Enforce at trust boundary, preserve logs |
 
 ## Hypothesis ledger

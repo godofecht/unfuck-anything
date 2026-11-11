@@ -86,6 +86,30 @@ Each case is illustrative: the diagnosis follows from the *hypothetical observed
 
 **Repair:** Make failure state explicit, preserve trace and downstream contract, and test partial results and retry idempotence. The outcome measure is recovered data correctness, not merely fewer alarms.
 
+## Case H — an outsider's implementation is dismissed without a reproducible criterion
+
+**Claim:** A proposed implementation is “not how serious developers do things.”
+
+**Observed (hypothetical):** The submission has a reproducible correctness test and a measured latency improvement under a specified workload. Review notes invoke architectural style without a stated invariant; an accepted implementation with a familiar author uses a similar mechanism. No one has yet evaluated compatibility, operational burden, or the negative path for either proposal.
+
+**Competing explanations:** (H1) an undocumented but real maintenance or security requirement; (H2) an incomplete comparison; (H3) familiarity and review access influence decisions independently of capability; (H4) a legitimate difference in scope or risk.
+
+**Discriminator:** Compare the proposals against the same pinned contract and data, including negative cases; inspect their callers and release obligations; identify exact review criteria and exceptions; inspect accessible review chronology without guessing anyone's internal motive. Test counterexamples.
+
+**Repair:** Make the contract and criteria explicit; add reproducible tests and equitable review instructions; accept or reject *each implementation* based on demonstrated outcomes and documented constraints. Neither outsider status nor insider reputation supplies a pass.
+
+## Case I — the eligibility queue outlives the capability it claims to protect
+
+**Claim:** A contributor must acquire a recognized badge or join a committee before their reproducible bug report can be triaged.
+
+**Observed (hypothetical):** A user-facing defect remains open, two reproducible reports are redirected into an onboarding queue, and a maintainer cannot point to a security or governance reason why *triage* (rather than merge authority) requires the badge.
+
+**Competing explanations:** Abuse prevention, scarce reviewer time, regulated approval for deployments, an opaque policy, or a gate that conflates evidence evaluation with permission to change production.
+
+**Discriminator:** Separate rights to report, reproduce, review, merge, and deploy. Audit policy and moderation constraints, review turnaround, and the failure's consequences. Determine whether a trusted contributor can reproduce the report without granting any additional permissions to its author.
+
+**Repair:** Enable evidence intake and reproducibility checks without granting unauthorized write access; keep code ownership and deployment approvals intact. Make criteria, appeal route, and response expectations transparent. If abuse risks justify gating, design a bounded alternative intake path.
+
 ## Transfer to other systems
 
 For software, evidence is code, traces, CI, tests and runtime behavior. For organizations, evidence is process execution, defined metrics, anonymized case outcomes, authority and incentives. For agent ecosystems, evidence is immutable inputs, candidate diffs, independent tests, and acceptance/rejection history. The reasoning process stays the same; the evidence type and authorization boundaries change.

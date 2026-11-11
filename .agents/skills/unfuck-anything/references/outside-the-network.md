@@ -62,3 +62,11 @@ Possible causes: uneven familiarity with workflows, reviewer capacity, a real co
 ## Required report additions
 
 For reviews where recognition/access materially affects outcomes, include an **access and recognition ledger** with actor role, authority, accessible evidence, criterion, decision, affected person or user, cost, and unknowns. Explain whether the failure is technical, procedural, reputational, resource-related, or not established. Report remedies that can be implemented without assuming access or authority the investigator does not possess.
+
+## Escaping a gate's self-confirming measurement loop
+
+When the same institution owns the gate, samples the evidence, defines success, and reports that it has succeeded, distinguish **authorization** from **independent correctness**. Write an outsider-verifiable claim whose test does not require network membership, private reviewer approval, or affiliation-based credibility. Use publicly runnable contract tests, independently derived invariants, anonymized affected-user outcomes, or a portable, consentful reproduction. A test must be ethical and lawful; a withheld sensitive dataset is not a license to expose it.
+
+If only the gatekeeper can observe the relevant outcome, say **not independently verified**. Do not automatically infer a bad motive. Assess whether a properly anonymized test, published acceptance criterion, or genuinely independent auditor could open the process. The test should be equally able to contradict the outsider's proposed alternative.
+
+Read `outside-verification.md` and `claim-correction.md`.

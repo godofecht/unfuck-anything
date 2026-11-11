@@ -21,3 +21,11 @@ Unverified conditions, owner approvals, migration risks, monitoring, exact rollb
 
 ## Final statement
 What is actually better, how it was observed, what remains unknown, and whether the change is ready for promotion.
+
+## Outsider verification gate
+
+**Claim support:** supported within scope | contradicted within scope | mixed | unresolved
+
+**Independence:** externally replicated | externally reproducible (not replicated) | internal-only | unavailable
+
+Which decisive test can be reproduced by someone outside the claimant institution's test-and-approval pipeline? Who controlled inputs, expected outputs, instrumentation, test execution and adjudication? Record outside-run evidence separately from the internal CI result. If none is possible, report **not independently verified** and name the blocker. A hash or a GitHub badge does not validate the truth of its contents.

@@ -30,3 +30,7 @@ Candidate changes including **no change** and **instrument first**; expected out
 
 ## Decision
 Audit-only, intervention selected, blocked, or no change justified, with rationale.
+
+## Contestable premises and external verification
+
+List any institutional or fashionable technical claims that determine the architecture. For each, link the exact proposition, predicted effect, independent oracle/procedure, actual evidence, and whether a nonmember could falsify it. If external verification is unavailable, label the constraint; never treat author-controlled CI or executive approval as external proof. For material disputed claims, prepare `CLAIM_CORRECTION_TEMPLATE.md`.

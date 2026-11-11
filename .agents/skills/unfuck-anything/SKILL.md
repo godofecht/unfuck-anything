@@ -1,6 +1,6 @@
 ---
 name: unfuck-anything
-description: Diagnose and repair broken software, infrastructure, CI, agent workflows, and socio-technical architectures created by proxy incentives, vibe coding, unnecessary complexity, misleading metrics, or accumulated bad practice. Use for architecture audits, systemic incidents, repeated regressions, CI theatre, agent-generated PR churn, and recoveries where superficial refactors have failed. Do not use for trivial style-only changes.
+description: Diagnose and repair broken software, infrastructure, CI, agent workflows, institutional prescriptions and socio-technical architectures created by proxy incentives, vibe coding, misleading metrics, unsupported claims, or accumulated bad practice. Use for architecture audits, claim correction, institutional and best-practice challenges, systemic incidents, regressions, CI theatre, PR churn, and repairs where superficial refactors have failed. Do not use for trivial style-only changes.
 ---
 
 # Unfuck Anything: evidence-first repair
@@ -12,6 +12,14 @@ Your job is to recover *real capability*, not to produce an impressive diff. Ope
 This skill arises from a particular perspective: a collective is made through compatible, accountable trajectories of action, not a label of belonging; recognition is not comprehension; and a contributor's access to a developer network is not a measurement of their work's truth. Networks also supply valuable trust, review, and coordination; never assume exclusion proves a claim or inclusion disproves one. The operative question is **which distinctions a system's recognition process discards, which consequences still occur, and which tests could make those distinctions visible**.
 
 Read `references/outside-the-network.md` when legitimacy, contributor access, professional recognition, governance, incentives, or institutional exclusion is implicated. Read `../../../PHILOSOPHY.md` when interpreting the founder's broader motivation. Treat both as *a motivating lens*, not as empirical proof that a particular institution or individual has failed. Test the lens itself.
+
+## Independent reality check
+
+**Always seek an empirical or technical verification route outside the institution, team, vendor, author, agent, or network making or rewarding the contested claim.** The decisive oracle must not be controlled solely by the claimant. An independent verifier need not have outsider identity; the *method and grading* must be inspectable by someone outside the originating authority. Institutional data can be evidence but cannot by itself be the verdict. Read `references/outside-verification.md` for the mandatory independence gate.
+
+When evidence cannot be obtained or independently repeated because of access, privacy, safety, instrumentation, or expense, clearly mark the proposition **not independently verified**. Never turn missing evidence into proof of institutional deception or into a claim of success.
+
+**Challenge the premise before optimizing the implementation.** For claims such as “best practice,” “industry standard,” “scales better,” “safe,” “scientifically proven,” or “compliant,” ask for a mechanism, scope, predicted consequences and an outsider-falsifiable test. Read `references/claim-correction.md`; preserve the possibility that the supposedly bad idea is correct. Correct claims precisely, not through insults.
 
 ## Non-negotiable invariants
 
@@ -30,6 +38,7 @@ Read `references/outside-the-network.md` when legitimacy, contributor access, pr
 **Repair (default when modification is requested):** audit, implement one defensible change, verify, provide rollback.
 **Recovery:** restore service and data safety first, preserve evidence, then diagnose systemic cause.
 **Adversarial review:** challenge a patch or architecture claim using disconfirmation tests; do not rewrite without evidence.
+**Claim correction:** decompose and test a technical or institutional assertion, publish a narrowly supported correction, and change derived artifacts only with authorization.
 
 Work incrementally. Terminate with an explicit decision: **verified repair**, **partially verified**, **blocked with evidence**, or **no change justified**. Never use “fixed” without stating the scope and verification.
 
@@ -54,6 +63,10 @@ The command path is relative to **this skill directory**. The collector cannot e
 Build an execution/data-flow map from entry points through transformations, state transitions, effects, persistence, and exits. Map owners and operational feedback loops for socio-technical systems. Where relevant, map who is allowed to define success, propose changes, receive reviews, allocate resources, and veto or appeal decisions. Separate authority from evidence and examine whether equivalent claims face comparable acceptance criteria. Draw the *real* dependencies, not the aspirational architecture from diagrams. Identify boundaries that are real, duplicated, bypassed, or merely named.
 
 Read `references/patterns.md` when investigating suspicious patterns. Examine what the system rewards and what its tests, dashboards, policies, and review process actually distinguish. Do not mistake a correlation with an incentive for proof of an individual's motive.
+
+### 2a. Challenge the architecture's premises
+
+If the proposed architecture or policy rests on an authoritative slogan, unpack the exact assertion, its actual scope, causal mechanism, empirical predictions, values and governing power. Distinguish a technical justification from a valid-but-unproven policy choice. Document relevant alternative mechanisms and ask what a person outside the proposing institution could measure to refute it. Follow `references/claim-correction.md` and prepare `assets/CLAIM_CORRECTION_TEMPLATE.md` for material claims. If the premise fails an independent test, correct it before propagating it into design requirements.
 
 ### 3. Form competing causal hypotheses
 
@@ -81,11 +94,11 @@ For concurrent agents: separate *candidate generation* from *promotion*. No cand
 
 Rerun identical pre- and post-change measurements with pinned inputs and conditions. Check correctness, regressions, failure injection, security controls, performance where relevant, deployment effects, and rollback. Compare with baseline. Inspect the diff for metric gaming: skipped suites, suppressed failures, renamed tests, changed data partitions, moved benchmarks, and untested paths. Run adversarial cases in `evals/scenarios.md` when evaluating the *agent's own behavior*.
 
-If anything material cannot be tested, report **partially verified** with the precise gap; do not call it solved.
+If anything material cannot be tested, report **partially verified** with the precise gap; do not call it solved. Specifically, do not label a contested claim **independently verified** unless at least one decisive test can be evaluated by an appropriately equipped outsider independently of the claimant's success-reporting and approval pipeline. Distinguish a *published outside-reproducible protocol* from *actually executed independent replication*. Institutional CI and review can supplement, not replace, this gate.
 
 ### 8. Deliver evidence, not theatre
 
-Write or summarize the fields from `assets/AUDIT_TEMPLATE.md`, `assets/REPAIR_PLAN_TEMPLATE.md`, and `assets/VERIFICATION_TEMPLATE.md`. State observed facts, ranked causes with disconfirming evidence, actual changes, exact executed commands, failures and limitations, rollback, and recommended next experiment. For a PR, link or identify its diff and CI checks. Never claim a reviewer or automation has validated something it has not.
+Write or summarize the fields from `assets/AUDIT_TEMPLATE.md`, `assets/REPAIR_PLAN_TEMPLATE.md`, and `assets/VERIFICATION_TEMPLATE.md`. For a contested claim also supply `assets/CLAIM_CORRECTION_TEMPLATE.md`, including the corrected proposition, outside verifier procedure, exact evidence and independence status. State observed facts, ranked causes with disconfirming evidence, actual changes, exact executed commands, failures and limitations, rollback, and recommended next experiment. For a PR, link or identify its diff and CI checks. Never claim a reviewer or automation has validated something it has not.
 
 ## Decision shortcuts
 
@@ -93,4 +106,4 @@ If the build is broken: establish whether the failure predates the patch; do not
 
 ## Optional references
 
-Read `references/outside-the-network.md` for the recognition/access audit and tests of asymmetric standards. Read `references/cases.md` for complete worked examples. Read `references/patterns.md` for diagnostic triggers, alternatives, and tests. Read `references/verification.md` for evidence grading, independent review, and anti-gaming gates. Do not load irrelevant cases into every investigation.
+Read `references/outside-verification.md` for the mandatory independent verification gate and `references/claim-correction.md` for challenging false or unsupported premises. Read `references/outside-the-network.md` for the recognition/access audit and tests of asymmetric standards. Read `references/cases.md` for complete worked examples. Read `references/patterns.md` for diagnostic triggers, alternatives, and tests. Read `references/verification.md` for evidence grading, independent review, and anti-gaming gates. Do not load irrelevant cases into every investigation.

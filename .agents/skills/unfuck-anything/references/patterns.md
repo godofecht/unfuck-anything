@@ -38,3 +38,18 @@ Outcome: NOT YET RUN. Intent: UNKNOWN.
 ```
 
 **Do not use subjective scores to replace a missing test.** Counted layers, line counts, tickets, meeting hours, and confidence percentages are not outcomes by themselves. Read the source, trace real execution, and seek evidence that could overturn your favorite diagnosis.
+
+## Challenging unsupported ideas and institutional prescriptions
+
+| Pattern | Claim worth testing | Outside-controlled discriminator | Honest correction |
+| --- | --- | --- | --- |
+| Authority laundering | “Committee X endorsed the architecture, so it's technically correct” | Extract the actual claim; run independently specified workload and failure tests | Approval is governance evidence, not a performance or correctness result |
+| Consensus as oracle | “Everyone competent agrees with this best practice” | Compare alternatives against a common, third-party inspectable contract | State domain where practice actually outperforms, if any |
+| Institutional evidence enclosure | “Only approved members can see whether this method works” | Create anonymized or synthetic independent oracle, bounded external test, or disclose irreducible access limits | Not independently verified if no external check is available |
+| Policy marketed as physical necessity | “Our preferred workflow is the only safe architecture” | Construct lawful, comparable alternative and measure safety invariants | Separate mandatory policy from claims of unique technical necessity |
+| Premise laundering | “AI-native architecture makes this automatically scalable” | Define throughput/latency/failure targets and independently measure a real workload | Replace slogan with conditional quantified claims |
+| Citation echo chamber | “Dozens of papers verify it” but they repeat one dataset or theoretical assumption | Trace evidence lineage; seek independent data, derivation, or falsifying experiment | Count independent observations, not repetitions |
+| Correcting by contrarianism | “An institution supports it, therefore it must be bad” | Test incumbent and alternative under the same external contract | Preserve the supported result even when institution-backed |
+| Certification confusion | “Certified” is used to assert outcomes beyond the certification scope | Inspect actual certificate scope and externally reproduce relevant observable claim | Report certified scope and untested claims separately |
+
+Refer to `claim-correction.md` for exact corrections and `outside-verification.md` for evidence independence. These are diagnostic prompts, **not** accusations of misconduct.

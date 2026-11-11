@@ -113,3 +113,43 @@ Each case is illustrative: the diagnosis follows from the *hypothetical observed
 ## Transfer to other systems
 
 For software, evidence is code, traces, CI, tests and runtime behavior. For organizations, evidence is process execution, defined metrics, anonymized case outcomes, authority and incentives. For agent ecosystems, evidence is immutable inputs, candidate diffs, independent tests, and acceptance/rejection history. The reasoning process stays the same; the evidence type and authorization boundaries change.
+
+## Case J — “clean architecture” as an unfalsifiable mandate
+
+**Claim:** Every module must implement five wrapper layers because this is “industry best practice.”
+
+**Hypothetical observation:** Two layers only forward calls and carry no isolated dependency, lifecycle, invariant or real consumer; the mandate adds maintenance work. A legacy plugin ABI might still require the layer in one target.
+
+**Outside-the-network test:** Pin public API and ABI contracts. Build a minimal implementation with and without the allegedly necessary wrappers using independently specified integration tests, plugin-loading checks and change-impact tasks. Include the ABI-constrained platform as a negative control.
+
+**Correction:** “These wrappers are not necessary for the checked targets and acceptance contract; the ABI adapter remains required for target Y.” Do not extrapolate from one workload to every architecture.
+
+## Case K — a reputable research claim exceeds its data
+
+**Claim:** A published technique “always beats the baseline,” accompanied by a sponsor-selected benchmark.
+
+**Hypothetical observation:** The reported improvement uses a subset with one data regime; the error bars and negative cases are missing. Independent reimplementation has not occurred.
+
+**Outside-the-network test:** Freeze claim scope, retrieve lawful raw data where available, implement a baseline independently, preregister holdout selection and tolerance, and compare equal compute and failure cases. If underlying data are inaccessible, reproduce on independently generated data and report that this tests generalization, *not* the original figures.
+
+**Correction:** “Under the published settings the approach is reported to improve the selected metric; it has not yet demonstrated a universal advantage.” Do not label the publication false until a relevant contradictory test has been run.
+
+## Case L — an organizational policy presented as unavoidable engineering truth
+
+**Claim:** Only officially affiliated developers can produce safe changes, because external contributors cannot understand the system.
+
+**Hypothetical observation:** A policy restricts merge permissions for real security reasons, while a reproducible external bug report is rejected before technical triage. Policy authority is being used to defend a broader, testable claim about competence.
+
+**Outside-the-network test:** Keep protected deployment and merge permissions. Invite independent reproducibility of the bug with sanitized inputs. Compare accepted and rejected patch correctness under a stable external contract, not contributor identity. Measure review effort and security outcomes separately.
+
+**Correction:** “Production write access remains restricted, but reproducible external evidence can be evaluated safely. The premise that affiliation determines technical correctness is unestablished.” Institutional permission remains binding where applicable; technical truth is a separate question.
+
+## Case M — a compelling contrarian claim is wrong
+
+**Claim:** A longstanding institution-backed validation rule is “obvious nonsense” and should be removed.
+
+**Hypothetical observation:** Local happy-path tests pass without the rule, but malformed or adversarial requests can cross a trust boundary.
+
+**Outside-the-network test:** On an isolated test stack, generate malicious inputs and compare protected versus unprotected variants against a security property independently of the incumbent team's approval. Do not attack live services.
+
+**Correction:** “The rule protects this threat model; removing it violates the stated security contract.” Explicitly retract the anti-institutional suspicion and keep the control.

@@ -90,6 +90,22 @@ For an outsider, this is especially costly: fashionable complexity is allowed to
 
 An honest architecture review must be able to make those acceptance conditions visible, apply them consistently, and permit both proposals to fail.
 
+## Reality does not inherit authority from an institution
+
+I do not want a system that merely repairs the implementation of a bad premise. It must be willing to ask whether the premise itself is nonsense. An elegantly engineered answer to the wrong question is still an error.
+
+A university, foundation, corporation, standards committee, code review team, or professional network can hold legitimate authority over what it accepts, funds, operates, or certifies. That authority does not give its assertions immunity from contradiction. A requirement may be enforceable without being optimal. A consensus may be informed without being a proof. A widely taught explanation may be useful within a narrow domain and false as a universal claim.
+
+The test I want is not a change in whose authority we obey. It is a change in where conclusions get their warrant. I want experiments and reasoning that can survive outside the institution that proposed the idea: a counterexample anybody equipped to perform the procedure can reproduce; a numerical identity independently derived; a program that obeys its contract under hostile inputs; or a real user outcome that persists when an internal dashboard is ignored.
+
+Independence is a property of the **test and its control**, not a badge granted to the tester. A second account repeating the first account's result is not independent evidence. A benchmark whose inputs, expected output and grading are set entirely by the proponent is not independent verification. Yet a test can be conducted in a university or with a published standard and still be independently scrutinized; I am not advocating the rejection of knowledge because of where it came from.
+
+And I want this applied to my claims first. If someone outside my own network can falsify an assertion I prefer, that is an achievement of the method, not a failure of loyalty.
+
+Some disputes are about values, representation or rights, rather than empirical claims alone. No benchmark can settle whose preferences deserve priority. It can expose the cost of choices, the truth of their justifications, and whether the decision-makers are confusing their power to decide with proof that they are correct.
+
+**No institutional permission is necessary for a reproducible contradiction to matter. No outsider identity makes a contradiction true by itself.**
+
 ## What I mean by unfucking something
 
 Unfucking a system is not purifying it of other people's mistakes. It is removing the distance between **what the system claims**, **what the system rewards**, **what it actually does**, and **what those affected by it need**.

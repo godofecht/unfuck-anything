@@ -33,3 +33,13 @@ Stop before changing real user data, removing controls, altering legal or regula
 **No change justified:** alternatives explain the observation or proposed intervention provides no demonstrated improvement.
 
 A single verification report is not a warranty for unexamined states, future changes, or every deployment environment.
+
+## Mandatory check beyond the originating institution
+
+For a contested empirical or technical claim, internal build logs, reviewers and GitHub CI are **supporting evidence, never the sole oracle**. Before reporting **independently verified**, require a decisive, externally inspectable procedure whose inputs, expectations and adjudication are not controlled solely by the claimant. The independent tester need not be excluded from every institution; they must be free to run or examine the test and reject the conclusion without the original authority's permission. Prefer controlled direct observation, independently derived invariants, independent implementations, new raw data, end-user outcomes, and comparable external reproductions. See `outside-verification.md`.
+
+A published reproduction recipe is **externally reproducible**, not **externally replicated**. Passing a GitHub workflow or local test in a repository controlled by the author is *internal verification*, even if the workflow runs on externally hosted infrastructure. Hashing test artifacts establishes integrity, not correctness; a second source quoting the first is not independent corroboration.
+
+The final report must separately state **claim support** (supported within scope / contradicted within scope / mixed / unresolved), **verification independence** (externally replicated / externally reproducible but not replicated / internal-only / unavailable), and **engineering release readiness** (verified repair / partially verified / blocked / no change). Do not combine them into a single ceremonial green status.
+
+If sensitive or proprietary data prevent public reproduction, propose an ethical safe alternative or disclose the precise evidence gap. Do not bypass authorization, expose records, or make a claim of independent verification that has not occurred.

@@ -16,6 +16,14 @@ Invoking **unfuck-anything** gives an agent a protocol to reconstruct what a sys
 
 The skill is compatible with the [Agent Skills specification](https://agentskills.io/specification). The canonical skill is at [`.agents/skills/unfuck-anything/SKILL.md`](.agents/skills/unfuck-anything/SKILL.md). It contains a read-only, Python-standard-library evidence collection script, diagnostic reference material, worked cases, and report templates.
 
+## Correcting bad premises and institutional claims
+
+The skill now has a **claim correction** mode as well as architecture repair. It tests “best practices,” official explanations, research interpretations, confident AI output, and institutional directives against falsifiable consequences rather than affiliation or consensus. An institution may set a policy, but setting a policy does not prove its technical justification.
+
+**Always seek a verification route outside the claimant's decision-and-metrics loop.** At least one decisive technical or empirical check must be independently executable or examinable by a qualified outsider before the result is labeled independently verified. If a test depends entirely on privileged infrastructure, secret data, internal approval, or the claimant's own rubric, say so and mark it **not independently verified**, rather than pretending approval equals truth.
+
+Read the [claim correction protocol](.agents/skills/unfuck-anything/references/claim-correction.md), [outside-institution verification rules](.agents/skills/unfuck-anything/references/outside-verification.md), and [claim correction report template](.agents/skills/unfuck-anything/assets/CLAIM_CORRECTION_TEMPLATE.md).
+
 ## Installation
 
 For Codex or another agent that reads project skills in `.agents/skills`, copy the entire `.agents/skills/unfuck-anything` directory into the target repository's `.agents/skills/` directory. For Claude Code, copy it into `.claude/skills/unfuck-anything/`. For GitHub Copilot, copy it into `.github/skills/unfuck-anything/`. Client support and discovery rules differ; installing the directory is not proof that the agent activated the skill.
